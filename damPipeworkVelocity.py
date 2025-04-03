@@ -1,6 +1,10 @@
 print("Solve for...")
 goal = input().lower()
+# First input requests the calculation goal of the code so it can choose a section to run.
 
+# The equation calculated with this code is a simplified Bernoulli equation, a relationship 
+#between the height differences between two bodies of fluid, the velocity of flow, and the 
+#losses exerted by a pipe.
 
 if goal == "vel":
     loss = 1
@@ -16,6 +20,7 @@ if goal == "vel":
     else:
         print("Input diff...")
         diff = float(input())
+    # The choice between inputing a height difference or two different heights.
 
     print("Number of losses...")
     noLosses = int(input())
@@ -54,6 +59,7 @@ if goal == "diff":
         distOne = float(input())
         distTwo = distOne - diff
         print(distTwo)
+        # The added optional function of calculating the unknown distance from one distance and the difference.
 
 
 if goal == "loss":
